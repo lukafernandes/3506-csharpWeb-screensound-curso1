@@ -12,6 +12,8 @@ opcoes.Add(3, new MenuMostrarArtistas());
 opcoes.Add(4, new MenuMostrarMusicas());
 opcoes.Add(-1, new MenuSair());
 
+
+
 void ExibirLogo()
 {
     Console.WriteLine(@"
