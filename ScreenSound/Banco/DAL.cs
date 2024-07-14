@@ -15,6 +15,11 @@ internal class DAL<T> where T : class
         this.context = context;
     }
 
+    public IEnumerable<T> ListarPor(Func<T, bool> condicao)
+    {
+        return context.Set<T>().Where(condicao);
+    }
+
     public IEnumerable<T> Listar()
     {
         return context.Set<T>().ToList();

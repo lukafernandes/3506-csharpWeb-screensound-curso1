@@ -16,5 +16,5 @@ internal class Menu
     public virtual void Executar(DAL<Artista> artistaDAL)
     {
         Console.Clear();
-    }
+    }    
 }
